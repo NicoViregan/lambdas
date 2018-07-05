@@ -16,7 +16,7 @@ public class RandomWords {
     RandomWords() {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("Words.txt"));
-            List<String> initialWords = reader.lines().collect(Collectors.toList());
+            initialWords = reader.lines().collect(Collectors.toList());
 
             System.out.println("Number of words read:  " + initialWords.size());
 
